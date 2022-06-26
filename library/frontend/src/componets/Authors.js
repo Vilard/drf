@@ -18,6 +18,7 @@ const AuthorList = ({authors}) => {
             <th>Birthday Year</th>
             {authors.map((author) => <AuthorItem author={author}/>)}
         </table>
+
     )
 }
 
