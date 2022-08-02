@@ -7,6 +7,7 @@ const UserItem = ({user}) => {
             <td>{user.user_name}</td>
             <td>{user.first_name}</td>
             <td>{user.last_name}</td>
+
         </tr>
     )
 }
