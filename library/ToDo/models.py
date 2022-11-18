@@ -12,8 +12,10 @@ class Project(models.Model):
 
 class ToDo(models.Model):
     ToDo = models.CharField(max_length=512)
-    create_data = models.DateTimeField(verbose_name='create_date', auto_now_add=True)
-    update_date = models.DateTimeField(verbose_name='update_date', auto_now=True)
+    create_data = models.DateTimeField(verbose_name='create_date',
+                                       auto_now_add=True)
+    update_date = models.DateTimeField(verbose_name='update_date',
+                                       auto_now=True)
     user_creator = models.ForeignKey(User, models.PROTECT)
     active = models.BooleanField()
     project = models.ForeignKey(Project, models.PROTECT)
