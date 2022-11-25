@@ -16,10 +16,12 @@ const AuthorList = ({authors}) => {
             <th>First name</th>
             <th>Last name</th>
             <th>Birthday Year</th>
-            {authors.map((author) => <AuthorItem author={author}/>)}
+            {authors.map((author) => 
+                <AuthorItem author={author}/>)}
         </table>
 
     )
 }
+
 
 export default AuthorList

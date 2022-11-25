@@ -7,7 +7,6 @@ const UserItem = ({user}) => {
             <td>{user.user_name}</td>
             <td>{user.first_name}</td>
             <td>{user.last_name}</td>
-
         </tr>
     )
 }
@@ -19,9 +18,16 @@ const UserList = ({users}) => {
             <th>User Name</th>
             <th>First Name</th>
             <th>Last Name</th>
-            {users.map((user) => <UserItem user={user}/>)}
+            {/* {users.map((user) => <UserItem user={user}/>)} */}
         </table>
     )
 }
+// const UserList = () => {
+//     return (
+//         <div>
+//             hdhdh
+//         </div>
+//     )
+// }
 
 export default UserList
